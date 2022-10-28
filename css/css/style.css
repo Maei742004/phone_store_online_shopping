@@ -1,0 +1,117 @@
+h1{
+ color: red;
+ text-align: center;
+}
+
+/* border*/
+.borderone{
+ border: 2px solid black;
+}
+
+.bordertwo{
+ border-top: 10px solid red;
+}
+.borderstyleone{
+ border-style: dotted;
+}
+.bordermix{
+ /* border-style: solid; */
+ /*all four  */
+ border-style: dotted double;
+ /* In from of -> top and button */
+ /* behind ->left and right */
+ border-style: dotted solid double;
+ /* top l&r button */
+ border-style: dashed solid double dotted;
+ /* T R B L */
+}
+.borderwidth{
+ border-style: solid;
+ border-width: thick;
+}
+.marginone{
+ margin: 50px;
+ padding: 50px;
+ border: 1px solid black;
+}
+.margintwo{
+ margin-left: 100px;
+ border: 1px solid red;
+}
+.paddingone{
+ border: 1px solid green;
+ padding-top: 50px;
+}
+
+
+/* grid */
+.gridone div, .gridtwo div, .gridthree div,.gridfour div{
+ padding: 20px;
+ color: white;
+ text-align: center;
+}
+.gridone, .gridtwo,.gridthree,.gridfour{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
+}
+.gridtwo{
+ grid-column-gap:40px ;
+ grid-row-gap: 50px;
+ /* grid-gap: 40px; */
+}
+
+.colunmadd{
+ grid-column-start: 1;
+ grid-column-end: 4;
+}
+.rowadd{
+ grid-row-start: 1;
+ grid-row-end: 12;
+}
+
+.relative_parent{
+  border: 1px solid red;
+  width: 1000px;
+  height: 400px;
+
+}
+.relative{
+ border: 1px solid black;
+ width: 400px;
+  height: 200px;
+  position: relative;
+  top: 50px;
+  left: 100px;
+ 
+}
+.absolute_parent{
+ border: 1px solid green;
+ width: 1000px;
+  height: 500px;
+  position: relative;
+}
+.absolute{
+ border: 1px solid yellow;
+ width: 200px;
+  height: 400px;
+  position:absolute;
+  top: 50px;
+  left: 100px;
+}
+.fixed{
+ position: fixed;
+ top: 50px;
+ right: 100px;
+}
+.online{
+ font-family: 'Arima', cursive;
+}
+@font-face{
+ src: url(Pacifico/Pacifico-Regular.ttf);
+ font-family: pacifico;
+}
+
+.offline{
+ font-family: pacifico;
+}
